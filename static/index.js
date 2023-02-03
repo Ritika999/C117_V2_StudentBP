@@ -1,7 +1,11 @@
-//Create date variable
+//date variable
+var date = new Date()
+let display_date= "Date:" + date.toLocaleDateString()
 
-
-//Load HTML DOM
+//Loading HTML DOM
+$(document).ready(function () {
+    $("#display_date").html(display_date)
+})
 
 //Define variable to store predicted emotion
 
