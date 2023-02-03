@@ -10,7 +10,7 @@ def index():
 def predict_emotion():
     
     # Get Input Text from POST Request
-   
+    input_text = request.json.get("text")  
     
     if not input_text:
         # Response to send if the input_text is undefined
